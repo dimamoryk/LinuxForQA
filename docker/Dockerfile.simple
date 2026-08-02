@@ -1,0 +1,5 @@
+
+FROM eclipse-temurin:21-jre-alpine
+WORKDIR /app
+COPY target/LoopApp.class /app/
+CMD ["java", "-cp", "/app", "LoopApp"]
