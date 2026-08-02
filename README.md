@@ -61,5 +61,4 @@ RestAssured vs HttpURLConnection в WSL
 Компиляция Java из командной строки
 
 🔗 Связанные проекты
-JavaForQA — фреймворк для автотестов
 - [JavaForQA](https://github.com/dimamoryk/JavaForQA) — фреймворк для автотестов (приватный репозиторий, доступ по запросу)
