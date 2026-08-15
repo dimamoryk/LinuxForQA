@@ -66,9 +66,9 @@ RestAssured vs HttpURLConnection в WSL
 ```markdown
 ## 🐳 Запуск с docker-compose
 ```bash
-docker-compose -f docker/docker-compose.yml up -d
+docker-compose -f docker/docker-compose.yaml up -d
 curl http://localhost:8080/hello
-docker-compose -f docker/docker-compose.yml down
+docker-compose -f docker/docker-compose.yaml down
 ```
 
 ## 🤖 CI/CD (GitHub Actions)
@@ -76,6 +76,6 @@ docker-compose -f docker/docker-compose.yml down
 
 ## ⚙️ Автоматическая настройка окружения (Ansible)
 ```bash
-ansible-playbook -i localhost, -c local ansible/setup.yml
+ansible-playbook -i localhost, -c local ansible/setup.yaml
 ```
 Устанавливает Java, Maven, Docker, docker-compose, Git, curl.
