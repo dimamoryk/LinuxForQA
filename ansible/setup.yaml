@@ -1,0 +1,24 @@
+---
+- name: Setup development environment for QA Automation
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install required packages
+      apt:
+        name:
+          - openjdk-17-jdk
+          - maven
+          - git
+          - curl
+          - unzip
+          - python3-pip
+        state: present
+
+    - name: Install docker-compose via pip
+      pip:
+        name: docker-compose
+        state: present
