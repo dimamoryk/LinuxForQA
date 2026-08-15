@@ -58,6 +58,11 @@
                         <artifactId>junit-jupiter</artifactId>
                         <version>${junit.version}</version>	
                 </dependency>
+                <dependency>
+                        <groupId>org.postgresql</groupId>
+                        <artifactId>postgresql</artifactId>
+                        <scope>runtime</scope>
+                </dependency>
         </dependencies>
 
 	<build>
