@@ -62,3 +62,20 @@ RestAssured vs HttpURLConnection в WSL
 
 🔗 Связанные проекты
 - [JavaForQA](https://github.com/dimamoryk/JavaForQA) — фреймворк для автотестов (приватный репозиторий, доступ по запросу)
+
+```markdown
+## 🐳 Запуск с docker-compose
+```bash
+docker-compose -f docker/docker-compose.yml up -d
+curl http://localhost:8080/hello
+docker-compose -f docker/docker-compose.yml down
+```
+
+## 🤖 CI/CD (GitHub Actions)
+При каждом push в `main` автоматически запускаются сборка и тесты. Смотри вкладку Actions на GitHub.
+
+## ⚙️ Автоматическая настройка окружения (Ansible)
+```bash
+ansible-playbook -i localhost, -c local ansible/setup.yml
+```
+Устанавливает Java, Maven, Docker, docker-compose, Git, curl.
